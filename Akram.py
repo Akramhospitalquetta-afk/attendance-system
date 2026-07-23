@@ -5,10 +5,12 @@ import os
 
 # Mobile screen optimization ke liye setup
 st.set_page_config(
-    page_title="Akram Hospital Attendance", 
-    layout="centered", 
+    page_title="Akram Hospital Attendance",
+    page_icon="AKRAM LOG.png",
+    layout="centered",
     initial_sidebar_state="collapsed"
 )
+
 
 FILE_NAME = "hospital_attendance.csv"
 
@@ -21,7 +23,8 @@ st.write("---")
 # Logo ko center mein lane ke liye
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.image("AKRAM LOG.png", use_container_width=True)
+    st.image("AKRAM LOG.png",
+, use_container_width=True)
 
 
 # Mobile Friendly Input Fields (Single Column layout)
